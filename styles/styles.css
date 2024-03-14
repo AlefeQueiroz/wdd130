@@ -9,13 +9,10 @@
 /* Body Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 /* Typography Styles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
@@ -65,4 +62,16 @@ nav a:hover {
 aside {
     width: 20em;
     text-align: center;
+    position: relative; /* Added position property */
+}
+
+aside h2 {
+    position: absolute;
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+}
+
+main img {
+    float: right;
+    /* Add other necessary declarations */
 }
