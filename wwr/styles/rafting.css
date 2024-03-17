@@ -1,0 +1,66 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #2c3e50; /* Dark blue */
+    --secondary-color: #3498db; /* Blue */
+    --text-color: #333; /* Dark gray */
+}
+
+/* Apply styles to headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+/* Remove underlines from social media links */
+.sociallinks a {
+    text-decoration: none;
+}
+
+/* Limit the width of the page */
+body {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color for visibility */
+    z-index: 1; /* Ensure the heading is above the image */
+}
+
+.article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+    color: white; /* Adjust text color for readability */
+    z-index: 1; /* Ensure the article is above the image */
+}
+
+.article img {
+    float: right;
+    margin-left: 20px;
+}
