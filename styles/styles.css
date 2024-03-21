@@ -18,14 +18,9 @@ p {
     padding: 25px;
 }
 
-header, footer, .grid {
+header, footer {
     max-width: 840px;
     margin: 0 auto;
-}
-
-header {
-    padding: 20px;
-    background-color: var(--accent1-color);
 }
 
 nav {
@@ -81,4 +76,11 @@ footer {
 
 h1 {
     border-bottom: 1px solid black;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    max-width: 840px;
+    margin: 0 auto;
 }
