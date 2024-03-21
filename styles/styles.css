@@ -78,9 +78,9 @@ h1 {
     border-bottom: 1px solid black;
 }
 
-/* Modified .grid selector */
 .grid {
     display: grid;
     align-items: center;
+    max-width: 840px;
+    margin: 0 auto;
 }
-
