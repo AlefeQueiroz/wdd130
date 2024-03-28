@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz - HTML and CSS</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <h1>HTML and CSS Quiz</h1>
+    <form action="#" method="post">
+        <div>
+            <label for="q1">Question 1: What is HTML short for?</label>
+            <input type="text" id="q1" name="q1" required>
+        </div>
+        <div>
+            <label for="q2">Question 2: Briefly explain the purpose of CSS?</label>
+            <textarea id="q2" name="q2" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="q3">Question 3: What does HTML stand for?</label>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="html">Hypertext Markup Language</option>
+                <option value="css">Cascading Style Sheets</option>
+                <option value="js">JavaScript</option>
+            </select>
+        </div>
+        <div>
+            <label for="q4">Question 4: How many heading tags are there in HTML5?</label>
+            <input type="number" id="q4" name="q4" min="1" max="6" required>
+        </div>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
