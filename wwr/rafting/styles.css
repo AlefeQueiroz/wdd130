@@ -1,0 +1,72 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #8B4513; /* Marrom */
+}
+
+p {
+    padding: 10px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #2E8B57; /* Verde mar */
+    padding: 20px;
+    display: flex; /* Usando CSS Flex */
+    justify-content: space-between; /* Alinha itens ao início e final */
+    align-items: center;
+}
+
+/* Estilos para a logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para a barra de navegação */
+nav ul {
+    list-style: none;
+    display: flex; /* Usando CSS Flex */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #8B4513; /* Marrom */
+}
+
+/* Estilos para o rodapé */
+footer {
+    padding: 20px;
+    background-color: #2E8B57; /* Verde mar */
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilos para a imagem do cabeçalho */
+.hero img {
+    width: 100%; /* Manter a largura da imagem em 100% do contêiner */
+    height: auto; /* Ajustar automaticamente a altura para manter a proporção */
+    max-width: none; /* Permitir que a imagem atinja seu tamanho original */
+}
