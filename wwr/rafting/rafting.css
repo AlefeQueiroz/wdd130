@@ -1,109 +1,66 @@
-/* CSS for header */
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-header {
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    max-width: 1200px;
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilos do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+p {
+    padding: 25px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #8B4513; /* Marrom */
+    padding: 20px;
+    display: grid; /* Usando CSS Grid */
+    grid-template-columns: auto 1fr; /* Logotipo à esquerda, barra de navegação à direita */
+    align-items: center;
+}
+
+/* Estilos para a logo */
 .logo img {
     max-width: 100%;
     height: auto;
 }
 
-nav {
-    text-align: right;
-}
-
+/* Estilos para a barra de navegação */
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex; /* Usando CSS Flex */
 }
 
 nav ul li {
-    display: inline;
+    margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-    padding: 10px;
-}
-
-nav ul li a:hover {
-    font-weight: bold;
-}
-
-/* CSS for contact page */
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.company-info,
-.employee-profiles,
-.contact-form {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.company-info h2,
-.employee-profiles h2,
-.contact-form h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.employee {
-    text-align: center;
-}
-
-.employee img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.employee p {
-    font-weight: bold;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.contact-form input[type="checkbox"] {
-    display: inline;
-    margin-right: 5px;
-}
-
-.contact-form input[type="submit"] {
-    background-color: #333;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-weight: bold;
 }
 
-.contact-form input[type="submit"]:hover {
-    background-color: #555;
+/* Estilos para o rodapé */
+footer {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+/* Estilos para a imagem do cabeçalho */
+.hero img {
+    width: 100%; /* Manter a largura da imagem em 100% do contêiner */
+    height: auto; /* Ajustar automaticamente a altura para manter a proporção */
+    max-width: none; /* Permitir que a imagem atinja seu tamanho original */
 }
